@@ -1,4 +1,4 @@
-# terraform-workbench-linux-linode
+# terraform-workbench-linode
 
 Deploy a Linux workbench server in Linode.
 
@@ -13,7 +13,7 @@ To use this module, in your `main.tf` TerraForm code for a deployment insert the
 
 ``` code
 module "workbench" {
-  source = "github.com/frozenfoxx/terraform-workbench-linux-linode"
+  source = "github.com/frozenfoxx/terraform-workbench-linode"
 
   authorized_keys          = ["${linode_sshkey.terraform.ssh_key}"]
   fqdn                     = var.fqdn

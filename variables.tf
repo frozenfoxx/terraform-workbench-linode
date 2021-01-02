@@ -1,16 +1,6 @@
-variable "acme_email" {
-  default     = ""
-  description = "Email address for Let's Encrypt"
-}
-
 variable "authorized_keys" {
   default     = [""]
   description = "List of public keys used for SSH connections"
-}
-
-variable "fqdn" {
-  default     = ""
-  description = "Domain to attach to for Let's Encrypt and Traefik"
 }
 
 variable "image" {
