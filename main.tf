@@ -29,7 +29,6 @@ resource "linode_instance" "main" {
       "mv /tmp/scripts/* /usr/local/bin/",
       "/usr/local/bin/install_docker.sh",
       "/usr/local/bin/install_fail2ban.sh",
-      "mv /tmp/config/* /data/",
       "/usr/local/bin/deploy.sh"
     ]
   }
